@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Random Image Redirect</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script>
+    const urls = [
+      "https://ibb.co/fzDHwqSG",
+      "https://ibb.co/JRLpDSrD",
+      "https://ibb.co/q39394Jy",
+      "https://ibb.co/fdHV2JXJ",
+      "https://ibb.co/hF0BcXQS",
+      "https://ibb.co/9kB3PfPQ",
+      "https://ibb.co/d01njd1N",
+      "https://ibb.co/mrwt1GD4"
+    ];
+    // pick random and redirect
+    const dest = urls[Math.floor(Math.random() * urls.length)];
+    // replace so back button doesn't go back to this page
+    window.location.replace(dest);
+  </script>
+</head>
+<body>
+  <p>Redirecting to a random image… If you are not redirected automatically, pick one below:</p>
+  <ul>
+    <li><a href="https://ibb.co/fzDHwqSG">link 1</a></li>
+    <li><a href="https://ibb.co/JRLpDSrD">link 2</a></li>
+    <li><a href="https://ibb.co/q39394Jy">link 3</a></li>
+    <li><a href="https://ibb.co/fdHV2JXJ">link 4</a></li>
+    <li><a href="https://ibb.co/hF0BcXQS">link 5</a></li>
+    <li><a href="https://ibb.co/9kB3PfPQ">link 6</a></li>
+    <li><a href="https://ibb.co/d01njd1N">link 7</a></li>
+    <li><a href="https://ibb.co/mrwt1GD4">link 8</a></li>
+  </ul>
+</body>
+</html>
